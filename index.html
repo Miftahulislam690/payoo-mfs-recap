@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo MFS</title>
+</head>
+<body>
+    <main class="flex justify-center pt-16">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-4">
+                <div class="stats shadow text-center">
+                    <div class="stat">
+                      <div class="stat-title">Acount Balance</div>
+                      <div id="account-balance" class="stat-value">89400</div>
+                    </div>
+                </div>
+                <div class="divider w-11/12 mx-auto"></div>
+                <div class="card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Your Amount</span>
+                        </label>
+                        <input id="input-add-amount" type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Your Pin Number</span>
+                        </label>
+                        <input id="input-pin-number" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-money-btn" class="btn btn-outline">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./js/addMoney.js"></script>
+</body>
+</html>
